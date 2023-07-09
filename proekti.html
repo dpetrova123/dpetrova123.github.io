@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Почетна</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile_picture.jpg" alt="profile_picture">
+            <h3>Драгана Петрова</h3>
+        </div>
+
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="item">Дома</span>
+                </a>
+            </li>
+            <li>
+                <a href="obrazovanie.html">
+                    <span class="icon"><i class="fas fa-user-graduate"></i></span>
+                    <span class="item">Образование</span>
+                </a>
+            </li>
+            <li>
+                <a href="iskustvo.html">
+                    <span class="icon"><i class="fa-solid fa-book-open-reader"></i></span>
+                    <span class="item">Искуство</span>
+                </a>
+            </li>
+            <li>
+                <a href="vestini.html">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-brain"></i></span>
+                    <span class="item">Вештини</span>
+                </a>
+            </li>
+            <li>
+                <a href="proekti.html" class="active">
+                    <span class="icon"><i class="fa-solid fa-database"></i></span>
+                    <span class="item">Проекти</span>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-address-card"></i></span>
+                    <span class="item">Контакт</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="portfolio">
+    <h2>Проекти</h2>
+
+    <div class="project">
+        <h3>Проект 1</h3>
+        <div>
+            <img src="stocks.png" alt="Project 1">
+            <p>Мојот прв проект е програма напишана во Python и овозможена за инсталација преку PyInstaller.
+            Поради потребите на татко ми при неговите работни обврски, дојдовме до идеја да направиме апликација во која
+            е овозможено корисникот да внесе број на парчиња даски кои му се потребни за работа и нивна должина како и
+            должина на главното парче даска од кое понатаму ќе бидат сечени соодветните парчиња кои се потребни.
+            Главната цел на оваа апликација беше да се олесни процесот на сечење даски така што би имало што е најмалку можно отпад
+            за подобро искористување на набавениот материјал.</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3>Проект 2 - тековен</h3>
+        <div>
+            <p>Мојот втор проект е изработка на апликација во која ќе биде овозможено корисниците
+            да навигираат и креираат работни задачи, да означуваат разни приоритети на задачи преку кориснички
+            дефинирани бои, да добијат неделен и месечен приказ на сите активности и да можат да поставуваат временска рамка
+            , времетраење и краен рок. Проектот ќе биде веб базиран, а од технологии ќе биде опфатено HTML, CSS, React и Firebase. </p>
+        </div>
+    </div>
+
+</section>
+<script>
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Почетна</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile_picture.jpg" alt="profile_picture">
+            <h3>Драгана Петрова</h3>
+        </div>
+
+        <ul>
+            <li>
+                <a href="index.html">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="item">Дома</span>
+                </a>
+            </li>
+            <li>
+                <a href="obrazovanie.html"  class="active">
+                    <span class="icon"><i class="fas fa-user-graduate"></i></span>
+                    <span class="item">Образование</span>
+                </a>
+            </li>
+            <li>
+                <a href="iskustvo.html">
+                    <span class="icon"><i class="fa-solid fa-book-open-reader"></i></span>
+                    <span class="item">Искуство</span>
+                </a>
+            </li>
+            <li>
+                <a href="vestini.html">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-brain"></i></span>
+                    <span class="item">Вештини</span>
+                </a>
+            </li>
+            <li>
+                <a href="proekti.html">
+                    <span class="icon"><i class="fa-solid fa-database"></i></span>
+                    <span class="item">Проекти</span>
+                </a>
+            </li>
+            <li>
+                <a href="kontakt.html">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-address-card"></i></span>
+                    <span class="item">Контакт</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-education">
+    <div class="title">
+        <h1>Образование</h1>
+        <div class="education">
+            <div>
+                <div class="layer">Основно образование</div>
+                <ul class="ed">
+                    <li>ООУ ,,Ацо Шопов"</li>
+                </ul>
+            </div>
+            <div>
+                <div class="layer">Средно образование</div>
+                <ul class="ed">
+                    <li>СУГС ,,Раде Јовчевски Корчагин"</li>
+                    <li>
+                        <a href="https://www.fakulteti.mk/news/01082022/sedum-maturanti-rasturija-vo-matematika-na-drzhavnata-matura">Достигнувања на државна матура</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="layer">Високо образование</div>
+                <ul class="ed">
+                    <li>Универзитет ,,Св. Кирил и Методиј" - Факултет за информатички науки и компјутерско инженерство</li>
+                    <li>Смер: Софтверско инженерство и информациски системи</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+</script>
+
+
+
+</body>
+</html>
